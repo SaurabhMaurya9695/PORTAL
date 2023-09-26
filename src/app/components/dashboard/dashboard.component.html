@@ -1,0 +1,25 @@
+
+<div class="container mt-5" *ngIf="show">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">insurance_type</th>
+        <th scope="col">premium_amount</th>
+        <th scope="col">coverage_amount</th>
+        <th scope="col">policy_status</th>
+        <th scope="col">coverage_end_date</th>
+        <th scope="col">coverage_start_date</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let x of Members">
+      <tr>
+        <th scope="row">{{x.insurance_type}}</th>
+        <td>{{x.premium_amount}}</td>
+        <td>{{x.coverage_amount}}</td>
+        <td>{{x.policy_status}}</td>
+        <td>{{x.coverage_end_date}}</td>
+        <td>{{x.coverage_start_date}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

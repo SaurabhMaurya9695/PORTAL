@@ -1,0 +1,32 @@
+<!-- public claim_id: any,
+    public claim_type: any,
+    public claim_status: any,
+    public claim_amount: any,
+    public supported_document_url: any,
+    public claim_submission_date: any,
+    public claim_approval_date: any, -->
+
+<div class="container mt-5" *ngif="show">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">claim_id</th>
+        <th scope="col">claim_type</th>
+        <th scope="col">claim_status</th>
+        <th scope="col">claim_amount</th>
+        <th scope="col">supported_document_url</th>
+        <th scope="col">claim_approval_date</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let x of plans">
+      <tr>
+        <th scope="row">{{x.claim_id}}</th>
+        <td>{{x.claim_type}}</td>
+        <td>{{x.claim_status}}</td>
+        <td>{{x.claim_amount}}</td>
+        <td>{{x.supported_document_url}}</td>
+        <td>{{x.claim_approval_date}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
